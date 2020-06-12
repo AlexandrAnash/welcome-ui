@@ -1,11 +1,11 @@
 import styled, { css } from '@xstyled/styled-components'
 import { th } from '@xstyled/system'
 import { Radio as ReakitRadio } from 'reakit/Radio'
-import { componentSystem, filterFieldComponent, system } from '@welcome-ui/system'
+import { componentSystem, shouldForwardProp, system } from '@welcome-ui/system'
 import { defaultFieldStyles } from '@welcome-ui/utils'
 import { Label as LabelWUI } from '@welcome-ui/label'
 
-export const Radio = styled(filterFieldComponent(ReakitRadio))(
+export const Radio = styled(ReakitRadio).withConfig({ shouldForwardProp })(
   ({ connected, order = '-1' }) => css`
     ${defaultFieldStyles};
     ${th('radios.default')}

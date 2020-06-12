@@ -25,7 +25,7 @@ export const MobileMenu = ({ items, theme, ...rest }) => {
       <Box>
         <Button
           as="a"
-          borderRadius="50px"
+          borderRadius={50}
           href="https://github.com/WTTJ/welcome-ui"
           mr="xs"
           rel="noopener"

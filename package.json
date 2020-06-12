@@ -70,8 +70,8 @@
     "@testing-library/dom": "=6.7.0",
     "@testing-library/react": "^8.0.1",
     "@testing-library/user-event": "=7.0.1",
-    "@xstyled/styled-components": "^1.17.0",
-    "@xstyled/system": "^1.17.0",
+    "@xstyled/styled-components": "^1.17.1",
+    "@xstyled/system": "^1.17.1",
     "babel-eslint": "=10.0.3",
     "babel-jest": "=24.7.1",
     "babel-plugin-annotate-pure-calls": "^0.4.0",
@@ -148,7 +148,7 @@
   },
   "resolutions": {
     "docz/**/webpack": "4.41.1",
-    "styled-components": "5.0.0"
+    "styled-components": "5.1.1"
   },
   "husky": {
     "hooks": {

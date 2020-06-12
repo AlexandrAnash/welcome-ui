@@ -31,7 +31,7 @@ export function Modal({
   }
 
   return (
-    <S.Backdrop {...rest} hideOnClickOutside={hideOnClickOutside}>
+    <S.Backdrop {...rest}>
       <S.Dialog
         aria-label={ariaLabel}
         hide={closeModal}

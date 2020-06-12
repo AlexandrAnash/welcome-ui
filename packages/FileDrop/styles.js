@@ -1,18 +1,9 @@
 import styled, { css } from '@xstyled/styled-components'
 import { th } from '@xstyled/system'
-import { componentSystem, filterFieldComponent, system } from '@welcome-ui/system'
+import { componentSystem, shouldForwardProp, system } from '@welcome-ui/system'
 import { getVariantColor } from '@welcome-ui/utils'
 
-const FILTER_PROPS = [
-  'onAddFile',
-  'onRemoveFile',
-  'isDragAccept',
-  'isDragActive',
-  'isDragReject',
-  'forceFileType'
-]
-
-export const FileDrop = styled(filterFieldComponent('div', FILTER_PROPS))(
+export const FileDrop = styled('div').withConfig({ shouldForwardProp })(
   ({ connected, disabled, isDragAccept, isDragReject }) => css`
     ${th('defaultFields.default')};
     ${th('filedrops.default')};
